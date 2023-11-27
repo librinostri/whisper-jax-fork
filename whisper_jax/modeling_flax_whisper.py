@@ -997,7 +997,7 @@ class FlaxWhisperPreTrainedModel(FlaxPreTrainedModel):
     def __init__(
         self,
         config: WhisperConfig,
-        input_shape: Tuple[int] = (1, 80, 3000),
+        input_shape: Tuple[int] = (1, 128, 3000),
         seed: int = 0,
         dtype: jnp.dtype = jnp.float32,
         params_dtype: jnp.dtype = jnp.float32,
